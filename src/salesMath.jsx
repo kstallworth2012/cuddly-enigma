@@ -1,9 +1,11 @@
 import {useSelector,useDispatch,shallowEqual} from 'react-redux'
+import {grossProfit} from './actions'
+
 
 
 const SalesMath = ()=>{
 		const dispatch = useDispatch()
-		const profit = ()=> dispatch({type:'GROSS_PROFIT'})
+		const profit = ()=> dispatch(grossProfit())
 		const {	gross_sales,transactionsNum,items_sold,footfall,hours_open,gross_profit} = useSelector(state=>({
 				gross_sales:state.gross_sales,
 				transactionsNum:state.transactionsNum,

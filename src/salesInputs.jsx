@@ -22,6 +22,7 @@ const SalesInputs = ()=>{
       }
 
       const changeNum = (num)=>{
+      	//dispatch(change(num,inputs[num]))
       	dispatch({
       		type:'CHANGE_NUM',
       		num,
