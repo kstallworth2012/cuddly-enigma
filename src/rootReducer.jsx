@@ -9,7 +9,11 @@ const INITIAL_STATE = {
 		footfall:36300,
 		hours_open:1954,
 		cogs:8800,
-		gross_profit:0}
+		gross_profit:50000,
+        net_profit_after_tax:500000,
+        shrink:55000,
+    //Employee Productivity
+}
 
 function rootReducer(state=INITIAL_STATE,action){
 	switch(action.type){
